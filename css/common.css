@@ -1,0 +1,138 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
+  --color-dairy: #fcfcfc;
+  --color-white: #fff;
+
+  --spacing-inline: 15px;
+  --spacing-item-sm: 12px;
+  --spacing-item: 24px;
+  --spacing-text-gap: 8px;
+  --spacing-media-gap: 32px;
+  --spacing-hero-gap: 48px;
+  --spacing-section: 120px;
+
+  --font-size-base: 16px;
+  --font-size-card-title: 20px;
+  --font-size-section-title: 36px;
+  --font-size-hero: 56px;
+  --font-size-logo: 18px;
+
+  --line-height-base: 1.5;
+  --line-height-card-title: 1.2;
+  --line-height-section-title: 1.11;
+  --line-height-hero: 1.07;
+  --line-height-logo: 1.33;
+
+  --letter-spacing-base: 0.02em;
+  --letter-spacing-logo: 0.03em;
+  --letter-spacing-button: 0.04em;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-slate);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: var(--spacing-inline);
+  padding-right: var(--spacing-inline);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: var(--font-size-logo);
+  line-height: var(--line-height-logo);
+  letter-spacing: var(--letter-spacing-logo);
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: var(--color-iris);
+}
+
+.logo-dark {
+  color: var(--color-navy-blue);
+}
+
+.logo-light {
+  color: var(--color-cloud);
+}
+
+.section-title {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size-section-title);
+  line-height: var(--line-height-section-title);
+  letter-spacing: var(--letter-spacing-base);
+  color: var(--color-navy-blue);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: var(--font-size-card-title);
+  line-height: var(--line-height-card-title);
+  letter-spacing: var(--letter-spacing-base);
+  color: var(--color-navy-blue);
+}
+
+.card-text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+}
