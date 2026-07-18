@@ -26,6 +26,7 @@
   line-height: var(--line-height-base);
   letter-spacing: var(--letter-spacing-base);
   color: var(--color-cloud);
+  text-align: left;
 }
 
 .footer-social-block {
@@ -84,13 +85,17 @@
 .footer-subscribe-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 16px;
+}
+
+.footer-subscribe-label {
+  display: block;
+  width: 100%;
 }
 
 .footer-subscribe-input {
   width: 100%;
-  max-width: 288px;
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
@@ -120,6 +125,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   gap: 16px;
   min-width: 165px;
   height: 40px;
@@ -180,9 +186,16 @@
     gap: 24px;
   }
 
+  .footer-subscribe-label {
+    width: auto;
+  }
+
   .footer-subscribe-input {
     width: 264px;
-    max-width: none;
+  }
+
+  .footer-subscribe-button {
+    align-self: auto;
   }
 }
 
